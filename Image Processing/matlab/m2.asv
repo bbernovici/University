@@ -1,0 +1,6 @@
+%Citim imaginea
+img = imread('tren.png')
+mask= ones(3)* (-1) / 8;
+img_filt = filt_lin(img,mask);
+
+figure, image(img_filt), colormap(gray(256));
